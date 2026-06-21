@@ -1,5 +1,5 @@
 context:
-  version: "15.7.4"
+  version: "15.8.2"
 
 package:
   name: sql-formatter
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://registry.npmjs.org/sql-formatter/-/sql-formatter-${{ version }}.tgz
-  sha256: c844ac53f813cdb555ca57772c64d4bce643e0175adb6ade2c2ed4cbfb4787ac
+  sha256: ef65074d6c93c06a753c31006a114c0df999db7e57ab92e3054e1dfd66768fb3
 
 build:
   number: 0
