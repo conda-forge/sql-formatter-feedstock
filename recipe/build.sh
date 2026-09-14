@@ -4,7 +4,8 @@ set -o xtrace -o nounset -o pipefail -o errexit
 
 # Package package.json to skip unnecessary prepare step
 mv package.json package.json.bak
-jq 'del(.scripts.prepare)' package.json.bak > package.json
+jq 'del(.scripts.prepare)' package.json.bak | \
+    jq 'del(.devEngines)' > package.json
 
 # Create package archive and install globally
 npm pack --ignore-scripts
